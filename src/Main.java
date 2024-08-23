@@ -85,5 +85,43 @@ public class Main {
             }
         }
         System.out.println(Arrays.toString(weight));
+
+        //Урок 2
+        System.out.println(" ");
+        System.out.println("Урок 2");
+        System.out.println("Задача 1");
+        int[] Payments = {12500, 35200, 11000, 500, 10000};
+        int sum = 0;
+        for (int tools : Payments) {
+            sum += tools;
+        }
+        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+
+        System.out.println(" ");
+        System.out.println("Задача 2");
+        int[] weeklyPayments = {12500, 35200, 11000, 500, 10000};
+        int maxPayments = -1;
+        for (final int current : weeklyPayments) {
+            if (current > maxPayments){
+                maxPayments=current;
+            }
+        }
+        System.out.println("Максимальная сумма трат за неделю составила " + maxPayments + " рублей");
+        int minPayments= 100000;
+        for(final int current : weeklyPayments){
+            if(current < minPayments){
+                minPayments=current;
+            }
+        }
+        System.out.println("Минимальная сумма трат за неделю составила " + minPayments + " рублей");
+
+        System.out.println(" ");
+        System.out.println("Задача 3");
+        sum=0;
+        for (int tools : Payments) {
+            sum += tools;
+        }
+        sum /= Payments.length;
+        System.out.println("Средняя сумма трат за месяц составила " + sum + " рублей");
     }
 }
